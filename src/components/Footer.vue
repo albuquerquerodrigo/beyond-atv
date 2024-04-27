@@ -9,7 +9,7 @@
         tile
         width="100%"
         class="text-center"
-        color="#bc9b31"
+        color="#0d0d0d"
       >
         <v-card-text>
           <v-btn
@@ -17,8 +17,9 @@
             :key="iconfooter"
             class="mx-4"
             icon
+            dark
           >
-            <v-icon size="24px">
+            <v-icon dark size="24px">
               {{ iconfooter }}
             </v-icon>
           </v-btn>
@@ -27,7 +28,7 @@
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+          {{ new Date().getFullYear() }} — <strong>RonRonClub</strong>
         </v-card-text>
       </v-card>
     </v-footer>
@@ -42,8 +43,8 @@
         iconsfooter: [
         'mdi-home',
         'mdi-email',
-        'mdi-calendar',
-        'mdi-delete',
+        'mdi-share-variant'
+        
         ],
 
 

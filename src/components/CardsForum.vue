@@ -1,30 +1,30 @@
 <template>
 
   <div id="main-content">
-  <div 
-    v-for="(classe,index) in nova" :key="index"
-        class="pt-10 "
-    >
-  <v-card outlined>
-    <v-list-item three-line>
-      
+
+   <div v-for="(classe,index) in nova" :key="index" class="pt-10">
+
+    <v-card outlined>
+
+     <v-list-item three-line>
+
       <v-list-item-content>
+
         <div class="text-overline mb-4">
-          OVERLINE
+          <v-icon size="15px">mdi-radiobox-marked</v-icon>
+          ATIVO
         </div>
+
         <v-list-item-title class="text-h5 mb-1">
           {{ classe.nome }}
         </v-list-item-title>
         <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully</v-list-item-subtitle>
       </v-list-item-content>
-    
-            <v-icon size="45px"
-            v-for="iconforumcard in iconforumcard"
-            :key="iconforumcard"
-            class="mx-4"
-            icon>
+
+         <v-icon size="45px" v-for="iconforumcard in iconforumcard" :key="iconforumcard"
+            class="mx-4" icon>
               {{ iconforumcard }}
-            </v-icon>
+          </v-icon>
     </v-list-item>
 
     <v-card-actions>
@@ -34,11 +34,11 @@
         rounded
         text
       >
-        Button
+        Entrar
       </v-btn>
-    </v-card-actions>
-  </v-card>
-</div>
+      </v-card-actions>
+      </v-card>
+    </div>
   </div>
 </template>
 
@@ -67,7 +67,7 @@
 
         nova: [
           { nome: "Forum - Banco de Dados", route: "/ForumBancoDeDados" },
-          { nome: "Forum - POO", route: "/ForumPOO" },
+          { nome: "Forum - POO", route: "/ForumProgramaçãoOrientadaAObjetos" },
           { nome: "Forum - BeyondTech", route: "/ForumBeyondTech" }
         ]
 

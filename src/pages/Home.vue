@@ -1,18 +1,18 @@
 <template>
-  <v-app   id="inspire">
-      <v-main>
+  <v-app id="inspire">
+    <v-main>
       <v-navigation-drawer
-    v-model="drawer"
-    app
-    >
-    <v-img
-    src="../assets/black-cat-icon.jpg"
-    dark
-    class="pt-5 text-center"
-    >
-    <v-avatar
-    size="100"
-    >
+        v-model="drawer"
+        app
+      >
+      <v-img
+        src="../assets/black-cat-icon.jpg"
+        dark
+        class="pt-5 text-center"
+      >
+      <v-avatar
+        size="100"
+      >
       <img
         src="https://cdn.vuetifyjs.com/images/john.jpg"
         alt="John">
@@ -20,10 +20,10 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
-            Forum
+            Admin
           </v-list-item-title>
           <v-list-item-subtitle>
-            subtext
+           Online
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -33,22 +33,28 @@
       <v-list
         dense
         nav
+        
       >
         <v-list-item
           v-for="item in items"
           :key="item.title"
           :to="item.to"
           link
+          
         >
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
+          <v-list-item-icon
+          class="text-center"
+          >
+            <v-icon >{{ item.icon }}</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
       </v-list>
+      
     </v-navigation-drawer>
 
     <v-app-bar
@@ -113,8 +119,8 @@ import Footer from '../components/Footer.vue'
       return{
         drawer: null,
         items: [
-        { title: 'Chat', icon: 'mdi-view-dashboard', to: '/chat' },
-        { title: 'Salvos', icon: 'mdi-image', to: '/salvos' }
+        { title: 'Chat', icon: 'mdi-message-text-outline', to: '/chat' },
+        { title: 'Salvos', icon: 'mdi-shape-square-plus', to: '/salvos' }
       ],    
       
     }
