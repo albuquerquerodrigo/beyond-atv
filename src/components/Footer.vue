@@ -1,25 +1,25 @@
 <template>
 <v-footer
-      v-bind="localAttrs"
+      v-bind = "localAttrs"
       padless
       bottom
     >
       <v-card
         flat
         tile
-        width="100%"
-        class="text-center"
-        color="#0d0d0d"
+        width = "100%"
+        class = "text-center"
+        color = "#0d0d0d"
       >
         <v-card-text>
           <v-btn
-            v-for="iconfooter in iconsfooter"
-            :key="iconfooter"
-            class="mx-4"
+              v-for = "iconfooter in iconsfooter"
+            :key    = "iconfooter"
+              class = "mx-4"
             icon
             dark
           >
-            <v-icon dark size="24px">
+            <v-icon dark size = "24px">
               {{ iconfooter }}
             </v-icon>
           </v-btn>
@@ -27,7 +27,7 @@
 
         <v-divider></v-divider>
 
-        <v-card-text class="white--text">
+        <v-card-text class = "white--text">
           {{ new Date().getFullYear() }} — <strong>RonRonClub</strong>
         </v-card-text>
       </v-card>

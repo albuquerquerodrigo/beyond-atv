@@ -133,7 +133,7 @@
           <v-textarea
           filled
           auto-grow
-          label="Four rows"
+          label="Escreva sua postagem"
           rows="4"
           row-height="30"
           shaped
