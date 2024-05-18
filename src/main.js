@@ -24,11 +24,11 @@ const store = new Vuex.Store({
   },
 
   actions: {
-    create({commit}, payload) {
+    create({ commit }, payload) {
       const { email, password } = payload;
       createUserWithEmailAndPassword(auth, email, password)
         .then((result) => {
-          commit("logAction", "Usuário criado"); 
+          commit("logAction", "Usuário criado");
           console.log("Usuário criado!", result);
         })
         .catch((error) => {
@@ -36,8 +36,8 @@ const store = new Vuex.Store({
         });
     },
 
-    login({commit}, payload) {
-      const {email, password} = payload;
+    login({ commit }, payload) {
+      const { email, password } = payload;
       signInWithEmailAndPassword(auth, email, password)
         .then((result) => {
           console.log("Usuário logado!", result);
@@ -47,7 +47,7 @@ const store = new Vuex.Store({
           alert(error);
         });
     },
-    
+
   }
 })
 
