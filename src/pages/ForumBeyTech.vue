@@ -30,7 +30,7 @@
             </v-list-item-content>
           </v-list-item>
           <div class="pt-5 text-center">
-            <v-btn @click="goTo('/')" v-for="iconforumcard in iconforumcard" :key="iconforumcard">Pat para Voltar
+            <v-btn @click="goTo('/Home')" v-for="iconforumcard in iconforumcard" :key="iconforumcard">Pat para Voltar
               <v-icon size="20px">{{ iconforumcard }}</v-icon>
             </v-btn>
           </div>

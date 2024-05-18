@@ -7,6 +7,8 @@ import ForumBD from '../pages/ForumBD.vue'
 import ForumPOO from '../pages/ForumPOO.vue'
 import ForumBeyTech from '../pages/ForumBeyTech.vue'
 import Home from '../pages/Home.vue'
+import Login from '../pages/Login.vue'
+import NotFound from '../pages/NotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -35,9 +37,18 @@ const routes = [
         component: ForumBeyTech
     },
     { 
-        path: '/',
+        path: '/Home',
         component: Home
     },
+
+    {
+        path: '/',
+        component: Login
+    },
+    {
+        path: '*',
+        component: NotFound
+    }
 ]
 
 const router = new VueRouter({
